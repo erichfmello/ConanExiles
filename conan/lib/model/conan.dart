@@ -1,4 +1,5 @@
 import 'package:conan/model/ScreenEnum.dart';
+import 'package:conan/screen/attributes/attributesScreen.dart';
 import 'package:conan/screen/home/homeScreen.dart';
 import 'package:flutter/material.dart';
 
@@ -9,6 +10,12 @@ class Conan {
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => HomeScreen()),
+        );
+        break;
+      case ScreenEnum.AttributesScreen:
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const AttributesScreen()),
         );
         break;
       default:

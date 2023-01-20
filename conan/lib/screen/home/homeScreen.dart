@@ -1,3 +1,4 @@
+import 'package:conan/model/ScreenEnum.dart';
 import 'package:conan/screen/home/homeController.dart';
 import 'package:conan/widget/background/backgroundWidget.dart';
 import 'package:conan/widget/button/circle/circleButtonWidget.dart';
@@ -11,14 +12,11 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  final HomeController controller = HomeController();
-
-  void aaaa() {
-    print('ola mundo');
-  }
 
   @override
   Widget build(BuildContext context) {
+    final HomeController controller = HomeController(context);
+
     return Scaffold(
       body: Stack(
         children: <Widget>[
@@ -47,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       CircleButtonWidget(
                         buttonText: 'Atributos',
                         buttonImage: 'lib/assest/attributesIcon.png',
-                        callback: controller.none,
+                        callback: controller.goToAttributes,
                       ),
                       CircleButtonWidget(
                         buttonText: 'Talentos',
