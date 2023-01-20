@@ -1,4 +1,3 @@
-import 'package:conan/theme/color/colorTheme.dart';
 import 'package:conan/theme/text/textStyle.dart';
 import 'package:flutter/material.dart';
 
@@ -26,10 +25,6 @@ class CircleButtonWidget extends StatelessWidget {
             width: 80,
             height: 80,
             decoration: BoxDecoration(
-              // border: Border.all(
-              //   color: PrimaryColor(),
-              //   width: 2,
-              // ),
               borderRadius: BorderRadius.circular(40),
             ),
             child: Container(
