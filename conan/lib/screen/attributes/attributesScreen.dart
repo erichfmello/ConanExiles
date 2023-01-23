@@ -36,7 +36,16 @@ class _AttributesScreenState extends State<AttributesScreen> {
             appBarText: 'Atributos',
             callback: () => controller.goToBackScreen(context),
           ),
-          controller.widgets.elementAt(controller.currentIndex),
+          Container(
+            margin: const EdgeInsets.only(
+              left: 16,
+              right: 16,
+              top: 64,
+            ),
+            width: double.infinity - 32,
+            height: MediaQuery.of(context).size.height - 130,
+            child: controller.widgets.elementAt(controller.currentIndex),
+          ),
           Container(
             alignment: Alignment.bottomCenter,
             child: BottomNavigationBar(
@@ -56,7 +65,7 @@ class _AttributesScreenState extends State<AttributesScreen> {
                   'Sobre',
                 ),
                 BottomNavigationBarItemWidget().bottomNavigationBarItemWidget(
-                  'lib/assest/attributesIcon.png',
+                  'lib/assest/levelUpIcon.png',
                   'Evolução',
                 ),
               ],
