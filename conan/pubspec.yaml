@@ -69,6 +69,15 @@ flutter:
     - lib/assest/wikiIcon.png
     - lib/assest/strenghtIcon.png
     - lib/assest/levelUpIcon.png
+    - lib/assest/agilityIcon.png
+    - lib/assest/AutorityIcon.png
+    - lib/assest/CoragenIcon.png
+    - lib/assest/vitalityIcon.png
+    - lib/assest/ExpertiseIcon.png
+    - lib/assest/levelFiveIcon.png
+    - lib/assest/levelTenIcon.png
+    - lib/assest/levelFiftenIcon.png
+    - lib/assest/levelTwentyIcon.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

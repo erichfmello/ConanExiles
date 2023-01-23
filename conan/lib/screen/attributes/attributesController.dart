@@ -8,11 +8,15 @@ import 'package:flutter/material.dart';
 class AttributesController {
   late Conan conan = Conan();
   late int currentIndex;
+  late int currentIndexAttributesType;
+  late int currentIndexLevel;
   late List<Widget> widgets;
 
   AttributesController() {
     conan = Conan();
     currentIndex = 0;
+    currentIndexAttributesType = 0;
+    currentIndexLevel = 0;
 
     fillWidgets();
   }
@@ -21,7 +25,18 @@ class AttributesController {
     widgets = [];
     widgets.add(const AttributesHomeWidget());
     widgets.add(const AttributesAboutWidget());
-    widgets.add(const AttributesEvolutionWidget());
+    widgets.add(AttributesEvolutionWidget(
+      controller: this,
+    ));
+  }
+
+  void changeCurrentIndexAttributesType(int index) {
+    currentIndexAttributesType = index;
+    currentIndexLevel = 0;
+  }
+
+  void changeCurrentIndexLevel(int index) {
+    currentIndexLevel = index;
   }
 
   void goToBackScreen(BuildContext context) {
