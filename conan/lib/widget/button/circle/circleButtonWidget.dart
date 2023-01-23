@@ -36,7 +36,7 @@ class CircleButtonWidget extends StatelessWidget {
           ),
           Text(
             buttonText,
-            style: FontH5(),
+            style: FontH5PrimaryColor(),
           ),
         ],
       ),
