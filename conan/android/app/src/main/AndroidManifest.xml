@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.conan">
    <application
-        android:label="conan"
+        android:label="Conan Book"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
