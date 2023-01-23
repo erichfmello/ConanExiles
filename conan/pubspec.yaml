@@ -67,6 +67,7 @@ flutter:
     - lib/assest/attributesIcon.png
     - lib/assest/talentIcon.png
     - lib/assest/wikiIcon.png
+    - lib/assest/strenghtIcon.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

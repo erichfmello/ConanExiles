@@ -6,16 +6,23 @@ import 'package:flutter/material.dart';
 class Conan {
   void goToScreen(BuildContext context, ScreenEnum screenEnum) {
     switch (screenEnum) {
+      case ScreenEnum.BackScreen:
+        Navigator.pop(context);
+        break;
       case ScreenEnum.HomeScreen:
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => HomeScreen()),
+          MaterialPageRoute(
+            builder: (context) => HomeScreen(),
+          ),
         );
         break;
       case ScreenEnum.AttributesScreen:
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => const AttributesScreen()),
+          MaterialPageRoute(
+            builder: (context) => AttributesScreen(),
+          ),
         );
         break;
       default:
