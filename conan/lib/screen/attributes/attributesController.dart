@@ -1,8 +1,8 @@
 import 'package:conan/model/ScreenEnum.dart';
 import 'package:conan/model/conan.dart';
-import 'package:conan/widget/attributesWidgets/attributesAboutWidget.dart';
-import 'package:conan/widget/attributesWidgets/attributesEvolutionWidget.dart';
-import 'package:conan/widget/attributesWidgets/attributesHomeWidget.dart';
+import 'package:conan/widget/attributes/attributesAboutWidget.dart';
+import 'package:conan/widget/attributes/attributesEvolutionWidget.dart';
+import 'package:conan/widget/attributes/attributesHomeWidget.dart';
 import 'package:flutter/material.dart';
 
 class AttributesController {

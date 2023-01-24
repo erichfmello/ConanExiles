@@ -1,19 +1,21 @@
-import 'package:conan/screen/attributes/attributesController.dart';
+import 'package:conan/model/ScreenEnum.dart';
+import 'package:conan/screen/talents/talentController.dart';
 import 'package:conan/theme/color/colorTheme.dart';
 import 'package:conan/widget/appBar/AppBarWidget.dart';
 import 'package:conan/widget/background/backgroundWidget.dart';
 import 'package:conan/widget/bottomNavigationBarItem/BottomNavigationBarItemWiget.dart';
+import 'package:conan/widget/talents/talentsHomeWidget.dart';
 import 'package:flutter/material.dart';
 
-class AttributesScreen extends StatefulWidget {
-  const AttributesScreen({super.key});
+class TalentScreen extends StatefulWidget {
+  TalentScreen({super.key});
 
   @override
-  State<AttributesScreen> createState() => _AttributesScreenState();
+  State<TalentScreen> createState() => _TalentScreenState();
 }
 
-class _AttributesScreenState extends State<AttributesScreen> {
-  late AttributesController controller = AttributesController();
+class _TalentScreenState extends State<TalentScreen> {
+  late TalentController controller = TalentController();
 
   void changeIndex(int index) {
     setState(() {
@@ -31,8 +33,8 @@ class _AttributesScreenState extends State<AttributesScreen> {
             fit: 'fitHeight',
           ),
           AppBarWidget(
-            appBarText: 'Atributos',
-            callback: () => controller.goToBackScreen(context),
+            appBarText: 'Talentos',
+            callback: () => controller.goToPage(context, ScreenEnum.BackScreen),
           ),
           Container(
             margin: const EdgeInsets.only(
@@ -55,22 +57,22 @@ class _AttributesScreenState extends State<AttributesScreen> {
               unselectedItemColor: PrimaryColorN90(),
               items: <BottomNavigationBarItem>[
                 BottomNavigationBarItemWidget().bottomNavigationBarItemWidget(
-                  'lib/assest/attributesIcon.png',
+                  '',
                   Icons.home,
                   'Home',
-                  true,
+                  false,
                 ),
                 BottomNavigationBarItemWidget().bottomNavigationBarItemWidget(
                   'lib/assest/strenghtIcon.png',
-                  Icons.home,
-                  'Sobre',
-                  true,
+                  Icons.category,
+                  'Categorias',
+                  false,
                 ),
                 BottomNavigationBarItemWidget().bottomNavigationBarItemWidget(
-                  'lib/assest/levelUpIcon.png',
-                  Icons.home,
-                  'Evolução',
-                  true
+                  '',
+                  Icons.handyman,
+                  'Martelo construtor',
+                  false,
                 ),
               ],
             ),

@@ -12,3 +12,5 @@ https://conanexiles.fandom.com/pt-br/wiki/Conan_Exiles_Wiki
     Autoridade
     Coragem
     Expertise
+
+* religião --> https://conanexiles.fandom.com/pt-br/wiki/Atributos

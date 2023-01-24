@@ -1,9 +1,9 @@
 import 'package:conan/screen/attributes/attributesController.dart';
 import 'package:conan/theme/color/colorTheme.dart';
 import 'package:conan/theme/text/textStyle.dart';
-import 'package:conan/widget/attributesWidgets/attributesTypeWidget/attributeTypeWidget.dart';
-import 'package:conan/widget/attributesWidgets/attributesTypeWidget/attributesDescriptionWidget.dart';
-import 'package:conan/widget/attributesWidgets/attributesTypeWidget/attrinutesLevelWidget.dart';
+import 'package:conan/widget/attributes/attributesTypeWidget/attributeTypeWidget.dart';
+import 'package:conan/widget/attributes/attributesTypeWidget/attributesDescriptionWidget.dart';
+import 'package:conan/widget/attributes/attributesTypeWidget/attrinutesLevelWidget.dart';
 import 'package:flutter/material.dart';
 
 class AttributesEvolutionWidget extends StatefulWidget {

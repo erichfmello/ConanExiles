@@ -1,6 +1,7 @@
 enum ScreenEnum {
-  StartScreen,
+  AttributesScreen,
   BackScreen,
   HomeScreen,
-  AttributesScreen,
+  StartScreen,
+  TalentScreen,
 }

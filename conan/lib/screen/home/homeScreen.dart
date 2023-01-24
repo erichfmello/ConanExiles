@@ -45,12 +45,12 @@ class _HomeScreenState extends State<HomeScreen> {
                       CircleButtonWidget(
                         buttonText: 'Atributos',
                         buttonImage: 'lib/assest/attributesIcon.png',
-                        callback: controller.goToAttributes,
+                        callback: () => controller.goToPage(ScreenEnum.AttributesScreen),
                       ),
                       CircleButtonWidget(
                         buttonText: 'Talentos',
                         buttonImage: 'lib/assest/talentIcon.png',
-                        callback: controller.none,
+                        callback: () => controller.goToPage(ScreenEnum.TalentScreen),
                       ),
                       CircleButtonWidget(
                         buttonText: 'Wiki',

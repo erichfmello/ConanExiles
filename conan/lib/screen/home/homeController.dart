@@ -11,8 +11,8 @@ class HomeController {
     context = buildContext;
   }
 
-  void goToAttributes() {
-    conan.goToScreen(context, ScreenEnum.AttributesScreen);
+  void goToPage(ScreenEnum screenEnum) {
+    conan.goToScreen(context, screenEnum);
   }
 
   void none() {
