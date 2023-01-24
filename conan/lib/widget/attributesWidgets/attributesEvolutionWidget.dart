@@ -39,68 +39,66 @@ class _AttributesEvolutionWidgetState extends State<AttributesEvolutionWidget> {
         children: <Widget>[
           SizedBox(
             height: 96,
-            child: Expanded(
-              child: SizedBox(
-                width: MediaQuery.of(context).size.width - 32,
-                child: ListView(
-                  scrollDirection: Axis.horizontal,
-                  children: <Widget>[
-                    AttributeTypeWidget(
-                      iconUrl: 'lib/assest/strenghtIcon.png',
-                      label: 'Força',
-                      isSelected:
-                          widget.controller.currentIndexAttributesType == 0
-                              ? true
-                              : false,
-                      callback: () => changeCurrentIndexAttributesType(0),
-                    ),
-                    AttributeTypeWidget(
-                      iconUrl: 'lib/assest/agilityIcon.png',
-                      label: 'Agilidade',
-                      isSelected:
-                          widget.controller.currentIndexAttributesType == 1
-                              ? true
-                              : false,
-                      callback: () => changeCurrentIndexAttributesType(1),
-                    ),
-                    AttributeTypeWidget(
-                      iconUrl: 'lib/assest/vitalityIcon.png',
-                      label: 'Vitalidade',
-                      isSelected:
-                          widget.controller.currentIndexAttributesType == 2
-                              ? true
-                              : false,
-                      callback: () => changeCurrentIndexAttributesType(2),
-                    ),
-                    AttributeTypeWidget(
-                      iconUrl: 'lib/assest/AutorityIcon.png',
-                      label: 'Autoridade',
-                      isSelected:
-                          widget.controller.currentIndexAttributesType == 3
-                              ? true
-                              : false,
-                      callback: () => changeCurrentIndexAttributesType(3),
-                    ),
-                    AttributeTypeWidget(
-                      iconUrl: 'lib/assest/CoragenIcon.png',
-                      label: 'Coragem',
-                      isSelected:
-                          widget.controller.currentIndexAttributesType == 4
-                              ? true
-                              : false,
-                      callback: () => changeCurrentIndexAttributesType(4),
-                    ),
-                    AttributeTypeWidget(
-                      iconUrl: 'lib/assest/ExpertiseIcon.png',
-                      label: 'Expertise',
-                      isSelected:
-                          widget.controller.currentIndexAttributesType == 5
-                              ? true
-                              : false,
-                      callback: () => changeCurrentIndexAttributesType(5),
-                    ),
-                  ],
-                ),
+            child: SizedBox(
+              width: MediaQuery.of(context).size.width - 32,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: <Widget>[
+                  AttributeTypeWidget(
+                    iconUrl: 'lib/assest/strenghtIcon.png',
+                    label: 'Força',
+                    isSelected:
+                        widget.controller.currentIndexAttributesType == 0
+                            ? true
+                            : false,
+                    callback: () => changeCurrentIndexAttributesType(0),
+                  ),
+                  AttributeTypeWidget(
+                    iconUrl: 'lib/assest/agilityIcon.png',
+                    label: 'Agilidade',
+                    isSelected:
+                        widget.controller.currentIndexAttributesType == 1
+                            ? true
+                            : false,
+                    callback: () => changeCurrentIndexAttributesType(1),
+                  ),
+                  AttributeTypeWidget(
+                    iconUrl: 'lib/assest/vitalityIcon.png',
+                    label: 'Vitalidade',
+                    isSelected:
+                        widget.controller.currentIndexAttributesType == 2
+                            ? true
+                            : false,
+                    callback: () => changeCurrentIndexAttributesType(2),
+                  ),
+                  AttributeTypeWidget(
+                    iconUrl: 'lib/assest/AutorityIcon.png',
+                    label: 'Autoridade',
+                    isSelected:
+                        widget.controller.currentIndexAttributesType == 3
+                            ? true
+                            : false,
+                    callback: () => changeCurrentIndexAttributesType(3),
+                  ),
+                  AttributeTypeWidget(
+                    iconUrl: 'lib/assest/CoragenIcon.png',
+                    label: 'Coragem',
+                    isSelected:
+                        widget.controller.currentIndexAttributesType == 4
+                            ? true
+                            : false,
+                    callback: () => changeCurrentIndexAttributesType(4),
+                  ),
+                  AttributeTypeWidget(
+                    iconUrl: 'lib/assest/ExpertiseIcon.png',
+                    label: 'Expertise',
+                    isSelected:
+                        widget.controller.currentIndexAttributesType == 5
+                            ? true
+                            : false,
+                    callback: () => changeCurrentIndexAttributesType(5),
+                  ),
+                ],
               ),
             ),
           ),

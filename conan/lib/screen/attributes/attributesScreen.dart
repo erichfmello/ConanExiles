@@ -1,14 +1,12 @@
 import 'package:conan/screen/attributes/attributesController.dart';
 import 'package:conan/theme/color/colorTheme.dart';
-import 'package:conan/theme/text/textStyle.dart';
 import 'package:conan/widget/appBar/AppBarWidget.dart';
-import 'package:conan/widget/attributesWidgets/attributesHomeWidget.dart';
 import 'package:conan/widget/background/backgroundWidget.dart';
 import 'package:conan/widget/bottomNavigationBarItem/BottomNavigationBarItemWiget.dart';
 import 'package:flutter/material.dart';
 
 class AttributesScreen extends StatefulWidget {
-  AttributesScreen({super.key});
+  const AttributesScreen({super.key});
 
   @override
   State<AttributesScreen> createState() => _AttributesScreenState();
