@@ -78,6 +78,35 @@ flutter:
     - lib/assest/levelTenIcon.png
     - lib/assest/levelFiftenIcon.png
     - lib/assest/levelTwentyIcon.png
+    - lib/assest/constructionIcon.png
+    - lib/assest/decorationIcon.png
+    - lib/assest/survivalIcon.png
+    - lib/assest/weaponIcon.png
+    - lib/assest/armorIcon.png
+    - lib/assest/religionIcon.png
+    - lib/assest/apprenticeMasonIcon.png
+    - lib/assest/journeymanMasonIcon.png
+    - lib/assest/masterMasonIcon.png
+    - lib/assest/apprenticeStairMakerIcon.png
+    - lib/assest/apprenticeRooferIcon.png
+    - lib/assest/apprenticeFencemakerIcon.png
+    - lib/assest/strutsIcon.png
+    - lib/assest/palisadeIcon.png
+    - lib/assest/apprenticeHatchmakerIcon.png
+    - lib/assest/elevatorsIcon.png
+    - lib/assest/engineerIcon.png
+    - lib/assest/journeymanStairMakerIcon.png
+    - lib/assest/journeymanRooferIcon.png
+    - lib/assest/journeymanFencemakerIcon.png
+    - lib/assest/journeymanGateIcon.png
+    - lib/assest/journeymanHatchmakerIcon.png
+    - lib/assest/masterStairMakerIcon.png
+    - lib/assest/masterRooferIcon.png
+    - lib/assest/masterSiegeCauldronIcon.png
+    - lib/assest/masterFencemakerIcon.png
+    - lib/assest/masterGateIcon.png
+    - lib/assest/masterHatchmakerIcon.png
+    - lib/assest/masterAwningsIcon.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

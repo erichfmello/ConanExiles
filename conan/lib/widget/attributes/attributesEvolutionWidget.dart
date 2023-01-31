@@ -1,7 +1,5 @@
 import 'package:conan/screen/attributes/attributesController.dart';
-import 'package:conan/theme/color/colorTheme.dart';
-import 'package:conan/theme/text/textStyle.dart';
-import 'package:conan/widget/attributes/attributesTypeWidget/attributeTypeWidget.dart';
+import 'package:conan/widget/button/navigation/navigationWithDescriptionWidget.dart';
 import 'package:conan/widget/attributes/attributesTypeWidget/attributesDescriptionWidget.dart';
 import 'package:conan/widget/attributes/attributesTypeWidget/attrinutesLevelWidget.dart';
 import 'package:flutter/material.dart';
@@ -44,7 +42,7 @@ class _AttributesEvolutionWidgetState extends State<AttributesEvolutionWidget> {
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: <Widget>[
-                  AttributeTypeWidget(
+                  NavigationWithDescriptionWidget(
                     iconUrl: 'lib/assest/strenghtIcon.png',
                     label: 'Força',
                     isSelected:
@@ -53,7 +51,7 @@ class _AttributesEvolutionWidgetState extends State<AttributesEvolutionWidget> {
                             : false,
                     callback: () => changeCurrentIndexAttributesType(0),
                   ),
-                  AttributeTypeWidget(
+                  NavigationWithDescriptionWidget(
                     iconUrl: 'lib/assest/agilityIcon.png',
                     label: 'Agilidade',
                     isSelected:
@@ -62,7 +60,7 @@ class _AttributesEvolutionWidgetState extends State<AttributesEvolutionWidget> {
                             : false,
                     callback: () => changeCurrentIndexAttributesType(1),
                   ),
-                  AttributeTypeWidget(
+                  NavigationWithDescriptionWidget(
                     iconUrl: 'lib/assest/vitalityIcon.png',
                     label: 'Vitalidade',
                     isSelected:
@@ -71,7 +69,7 @@ class _AttributesEvolutionWidgetState extends State<AttributesEvolutionWidget> {
                             : false,
                     callback: () => changeCurrentIndexAttributesType(2),
                   ),
-                  AttributeTypeWidget(
+                  NavigationWithDescriptionWidget(
                     iconUrl: 'lib/assest/AutorityIcon.png',
                     label: 'Autoridade',
                     isSelected:
@@ -80,7 +78,7 @@ class _AttributesEvolutionWidgetState extends State<AttributesEvolutionWidget> {
                             : false,
                     callback: () => changeCurrentIndexAttributesType(3),
                   ),
-                  AttributeTypeWidget(
+                  NavigationWithDescriptionWidget(
                     iconUrl: 'lib/assest/CoragenIcon.png',
                     label: 'Coragem',
                     isSelected:
@@ -89,7 +87,7 @@ class _AttributesEvolutionWidgetState extends State<AttributesEvolutionWidget> {
                             : false,
                     callback: () => changeCurrentIndexAttributesType(4),
                   ),
-                  AttributeTypeWidget(
+                  NavigationWithDescriptionWidget(
                     iconUrl: 'lib/assest/ExpertiseIcon.png',
                     label: 'Expertise',
                     isSelected:

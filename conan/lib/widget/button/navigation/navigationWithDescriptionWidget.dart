@@ -2,13 +2,13 @@ import 'package:conan/theme/color/colorTheme.dart';
 import 'package:conan/theme/text/textStyle.dart';
 import 'package:flutter/material.dart';
 
-class AttributeTypeWidget extends StatelessWidget {
+class NavigationWithDescriptionWidget extends StatelessWidget {
   final String iconUrl;
   final String label;
   final bool isSelected;
   final callback;
 
-  AttributeTypeWidget({
+  NavigationWithDescriptionWidget({
     super.key,
     required this.iconUrl,
     required this.label,

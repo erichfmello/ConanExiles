@@ -57,7 +57,7 @@ class _TalentScreenState extends State<TalentScreen> {
               unselectedItemColor: PrimaryColorN90(),
               items: <BottomNavigationBarItem>[
                 BottomNavigationBarItemWidget().bottomNavigationBarItemWidget(
-                  '',
+                  'lib/assest/constructionIcon.png',
                   Icons.home,
                   'Home',
                   false,
